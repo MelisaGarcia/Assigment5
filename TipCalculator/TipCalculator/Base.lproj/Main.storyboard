@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TipCalculator" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jbk-rY-ug9">
+                                <rect key="frame" x="0.0" y="44" width="414" height="852"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" spacing="98" translatesAutoresizingMaskIntoConstraints="NO" id="Gc4-jZ-xDC">
+                                        <rect key="frame" x="16" y="78" width="384.5" height="696"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="kxp-kw-Q7C" userLabel="AMOStack View">
+                                                <rect key="frame" x="67.5" y="0.0" width="249" height="90"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="TIP AMOUNT" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="52B-dc-8gv">
+                                                        <rect key="frame" x="0.0" y="0.0" width="132.5" height="27.5"/>
+                                                        <fontDescription key="fontDescription" name="AppleSymbols" family="Apple Symbols" pointSize="30"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lHP-AQ-jiF">
+                                                        <rect key="frame" x="132.5" y="0.0" width="116.5" height="90"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="90" id="t6f-wr-4Ai"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="AppleSymbols" family="Apple Symbols" pointSize="100"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="48" translatesAutoresizingMaskIntoConstraints="NO" id="y4R-cR-Csb" userLabel="PERStack View">
+                                                <rect key="frame" x="0.0" y="188" width="384.5" height="179.5"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="sQY-hS-1sk">
+                                                        <rect key="frame" x="0.0" y="0.0" width="384.5" height="101.5"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TIP PERCENTAGE" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JjF-rD-1MR">
+                                                                <rect key="frame" x="0.0" y="0.0" width="176" height="27.5"/>
+                                                                <fontDescription key="fontDescription" name="AppleSymbols" family="Apple Symbols" pointSize="30"/>
+                                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="%" textAlignment="center" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="P3U-8p-tfG">
+                                                                <rect key="frame" x="186" y="0.0" width="198.5" height="101.5"/>
+                                                                <color key="backgroundColor" white="0.0" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <fontDescription key="fontDescription" name="AppleSymbols" family="Apple Symbols" pointSize="100"/>
+                                                                <textInputTraits key="textInputTraits" keyboardType="numberPad" keyboardAppearance="alert"/>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
+                                                                        <color key="value" white="0.66666666666666663" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                                <connections>
+                                                                    <action selector="TipPercentageChange:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="VX5-fn-lZx"/>
+                                                                </connections>
+                                                            </textField>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="15" minValue="0.0" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="nXf-89-TBH">
+                                                        <rect key="frame" x="-2" y="149.5" width="388.5" height="31"/>
+                                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                <integer key="value" value="10"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="tipSliderChange:" destination="BYZ-38-t0r" eventType="valueChanged" id="iCt-ct-sMp"/>
+                                                        </connections>
+                                                    </slider>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="DM6-nn-hG9" userLabel="BILLStack View">
+                                                <rect key="frame" x="5" y="465.5" width="374.5" height="101.5"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BILL AMOUNT" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8bE-yP-tAh">
+                                                        <rect key="frame" x="0.0" y="0.0" width="144.5" height="27.5"/>
+                                                        <fontDescription key="fontDescription" name="AppleSymbols" family="Apple Symbols" pointSize="30"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="INSERT BILL TOTAL" textAlignment="center" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="10E-0y-WOy">
+                                                        <rect key="frame" x="174.5" y="0.0" width="200" height="101.5"/>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="200" id="voP-YE-JKC"/>
+                                                        </constraints>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <fontDescription key="fontDescription" name="AppleSymbols" family="Apple Symbols" pointSize="100"/>
+                                                        <textInputTraits key="textInputTraits" keyboardType="numberPad" keyboardAppearance="alert"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
+                                                                <color key="value" white="0.66666666666666663" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="billAmountTotal:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="0RZ-Ul-A9L"/>
+                                                        </connections>
+                                                    </textField>
+                                                </subviews>
+                                            </stackView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aaw-GC-Eua">
+                                                <rect key="frame" x="134.5" y="665" width="115.5" height="31"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.31401699029126212" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" name="AppleSymbols" family="Apple Symbols" pointSize="20"/>
+                                                <state key="normal" title="CALCULATE">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="10"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="calculateTipAmount:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hMo-BR-Wr8"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="aaw-GC-Eua" firstAttribute="width" secondItem="Gc4-jZ-xDC" secondAttribute="width" multiplier="0.299517" id="ehU-Mp-NfI"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="Gc4-jZ-xDC" firstAttribute="leading" secondItem="phb-AR-6Gl" secondAttribute="leading" constant="16" id="3jO-ZE-jxr"/>
+                                    <constraint firstAttribute="bottom" secondItem="Gc4-jZ-xDC" secondAttribute="bottom" constant="65" id="RGO-rh-6mc"/>
+                                    <constraint firstItem="phb-AR-6Gl" firstAttribute="trailing" secondItem="Gc4-jZ-xDC" secondAttribute="trailing" constant="13.5" id="a4I-id-7Hg"/>
+                                    <constraint firstItem="Gc4-jZ-xDC" firstAttribute="centerY" secondItem="jbk-rY-ug9" secondAttribute="centerY" id="lk2-Pa-7Ts"/>
+                                    <constraint firstAttribute="trailing" secondItem="Gc4-jZ-xDC" secondAttribute="trailing" constant="13.5" id="vP6-hW-Vkz"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="VgZ-GW-QLS"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="phb-AR-6Gl"/>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="jbk-rY-ug9" secondAttribute="bottom" id="JWj-6f-xZl"/>
+                            <constraint firstItem="jbk-rY-ug9" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="SLP-iO-RsR"/>
+                            <constraint firstItem="jbk-rY-ug9" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="eik-qf-Ss6"/>
+                            <constraint firstItem="jbk-rY-ug9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="uou-D6-1iC"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="Bu2-LN-1D7" appends="YES" id="fmi-Db-aCM"/>
+                        </connections>
+                    </view>
+                    <connections>
+                        <outlet property="BillAmountLabel" destination="8bE-yP-tAh" id="g5D-mu-Xnf"/>
+                        <outlet property="billAmountField" destination="10E-0y-WOy" id="s0D-ab-Sie"/>
+                        <outlet property="calculateButton" destination="aaw-GC-Eua" id="9sr-gw-UV7"/>
+                        <outlet property="scrollView" destination="jbk-rY-ug9" id="r3H-qS-RwD"/>
+                        <outlet property="tipAmountFixLabel" destination="52B-dc-8gv" id="7LV-zO-vAe"/>
+                        <outlet property="tipAmountLabel" destination="lHP-AQ-jiF" id="MVP-UX-aUx"/>
+                        <outlet property="tipPercentajeField" destination="P3U-8p-tfG" id="Hol-Z1-Q02"/>
+                        <outlet property="tipPercentajeLabel" destination="JjF-rD-1MR" id="njo-qw-ozb"/>
+                        <outlet property="tipPercentajeSlider" destination="nXf-89-TBH" id="YBD-ze-HYc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="Bu2-LN-1D7">
+                    <connections>
+                        <action selector="dismissKeyboard:" destination="BYZ-38-t0r" id="Tz9-24-ReQ"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="-900.00000000000011" y="15.401785714285714"/>
+        </scene>
+    </scenes>
+</document>
